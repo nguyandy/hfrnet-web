@@ -1,0 +1,37 @@
+<!doctype html>
+<title>HFRNet Radials</title>
+<h1>USAGE</h1>
+
+Retrieve points and uv data between a set of latitudes and longitudes at a given time and resolution.<br />
+
+https://hfrnet.ucsd.edu/map<br />
+
+Arguments<br />
+  lat1 - northern boundary. default: 73<br />
+  lon1 - western boundary. default: -170 <br />
+  lat2 - southern boundary. default: 13 <br />
+  lon2 - eastern boundary. default: -49<br />
+  prod - combination of rtv product: hourly (h), 25hr average (a), month average (am), year average (ay) and resolution: 500m, 1km, 2km, 6km. default: a_6km <br />
+  time - epoch time in seconds.  default: 15 hours ago<br />
+  callback - json callback function.  default: eqfeed_callback<br />
+ <br />
+Example <br />
+  https://hfrnet.ucsd.edu/map/?callback=jQuery341011901078419032718_1656599892559&lat1=40.12981741681639&lat2=34.08139909392745&lon1=-125.194091796875&lon2=-115.328369140625&time=1656540000&prod=a_6km<br />
+
+
+
+Retrieve a history of uv data at one latitude/longitude and resolution between a set of times<br />
+
+https://hfrnet.ucsd.edu/map/hist<br />
+
+Arguments<br />
+  lat1 - northern boundary. default: 73<br />
+  lon1 - western boundary. default: -170 <br />
+  prod - combination of rtv product: hourly (h), 25hr average (a), month average (am), year average (ay) and resolution: 500m, 1km, 2km, 6km. default: a_6km <br />
+  t0 - epoch time in seconds.  default: for hourly and 25hr average, 3 days before t1; for month average, 12 months before t1; for year average, 4 years before t1<br />
+  t1 - epoch time in seconds.  default: 15 hours ago<br />
+  callback - json callback function.  default: eqfeed_callback<br />
+<br />
+Example<br />
+  https://hfrnet.ucsd.edu/map/hist?callback=eqfeed_callback&lat1=34.619141&lon1=-122.989082&time=1656540000&prod=a_6km<br />
+

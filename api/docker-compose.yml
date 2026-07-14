@@ -1,0 +1,23 @@
+services:
+  hfrnet-api:
+    develop:
+      watch:
+        - action: sync+restart
+          path: .
+          target: /app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    networks:
+          - hfrnet
+    volumes:
+      - ./radialdata.ini:/app/radialdata.ini
+
+
+networks:
+  hfrnet:
+    external: true

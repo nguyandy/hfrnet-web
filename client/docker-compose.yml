@@ -1,0 +1,32 @@
+services:
+  hfrnet-dev:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: hfrnet-dev
+    env_file:
+      - ./../.env
+    volumes:
+      - ./www:/app/www
+      - ./../.env:/app/.env:ro
+    ports:
+      - "3000:3000"
+    depends_on:
+      - hfrnet-php-server
+    networks:
+      - hfrnet
+
+  hfrnet-php-server:
+    build: .
+    container_name: hfrnet-php-server
+    volumes:
+      - ./www:/var/www:ro
+    env_file:
+      - ./../.env
+    networks:
+      - hfrnet
+
+networks:
+  hfrnet:
+    external: true

@@ -1,0 +1,10 @@
+services:
+  hfrnet-client:
+    image: php:5.6.40-apache
+    container_name: hfrnet-client
+    ports:
+      - "3000:80"
+    volumes:
+      - ./:/var/www/html
+    env_file:
+      - .env

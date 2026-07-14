@@ -1,0 +1,31 @@
+section, article{
+  margin: 20px;
+}
+
+figure{
+  margin: 20px 20px;
+}
+
+figure img{
+  border: 1px solid gray;
+  box-shadow: 2px 2px 5px gray;
+}
+
+figcaption{
+  font-size: .8em;
+  margin: 5px 10px;
+}
+
+#radialage{
+  margin-top: 10px;
+  padding: 0px 10px;
+  width: 300px;
+
+}
+
+.anchor{
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+

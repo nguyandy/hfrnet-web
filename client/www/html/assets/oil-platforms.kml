@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document>
+  <!--
+  <name>Oil Platforms</name>
+  <open>1</open>
+  -->
+  <Style id="platform">
+    <IconStyle>
+      <color>ffffffff</color>
+      <scale>0.7</scale>
+      <Icon>
+        <href>http://cordc.ucsd.edu/projects/mapping/maps/img/oil_i.png</href>
+      </Icon>
+      <hotSpot x="16" y="31" xunits="pixels" yunits="pixels"/>
+    </IconStyle>
+    <LabelStyle>
+      <color>ff00ffff</color>
+    </LabelStyle>
+  </Style>
+<Placemark>
+	<name>A (site of 1969 oil spill)</name>
+	<description><![CDATA[
+	lat: 34.331944<br />
+	lon: -119.6125
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.6125,34.331944,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>B</name>
+	<description><![CDATA[
+	lat: 34.332500<br />
+	lon: -119.621667
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.621667,34.332500,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Belmont</name>
+	<description><![CDATA[
+	lat: 33.721667<br />
+	lon: -118.124722
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.124722,33.721667,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>C</name>
+	<description><![CDATA[
+	lat: 34.332778<br />
+	lon: -119.630833
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.630833,34.332778,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Chaffee</name>
+	<description><![CDATA[
+	lat: 33.739722<br />
+	lon: -118.138056
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.138056,33.739722,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Edith</name>
+	<description><![CDATA[
+	lat: 33.595833<br />
+	lon: -118.140833
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.140833,33.595833,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Ellen/Elly</name>
+	<description><![CDATA[
+	lat: 33.582222<br />
+	lon: -118.140833
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.140833,33.582222,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Emmy</name>
+	<description><![CDATA[
+	lat: 33.662222<br />
+	lon: -118.043611
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.043611,33.662222,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Esther</name>
+	<description><![CDATA[
+	lat: 33.718611<br />
+	lon: -118.113333
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.113333,33.718611,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Eureka</name>
+	<description><![CDATA[
+	lat: 33.563889<br />
+	lon: -118.116667
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.116667,33.563889,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Eva</name>
+	<description><![CDATA[
+	lat: 33.662222<br />
+	lon: -118.061111
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.061111,33.662222,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Freeman</name>
+	<description><![CDATA[
+	lat: 33.741111<br />
+	lon: -118.161667
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.161667,33.741111,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Gail</name>
+	<description><![CDATA[
+	lat: 34.125000<br />
+	lon: -119.400000
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.400000,34.125000,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Gilda</name>
+	<description><![CDATA[
+	lat: 34.182222<br />
+	lon: -119.418611
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.418611,34.182222,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Gina</name>
+	<description><![CDATA[
+	lat: 34.117222<br />
+	lon: -119.276389
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.276389,34.117222,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Grace</name>
+	<description><![CDATA[
+	lat: 34.179722<br />
+	lon: -119.468056
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.468056,34.179722,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Grissom</name>
+	<description><![CDATA[
+	lat: 33.759444<br />
+	lon: -118.180833
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.180833,33.759444,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Habitat</name>
+	<description><![CDATA[
+	lat: 34.286667<br />
+	lon: -119.588056
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.588056,34.286667,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Harmony</name>
+	<description><![CDATA[
+	lat: 34.393433<br />
+	lon: -120.169922
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.169922,34.393433,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Harvest</name>
+	<description><![CDATA[
+	lat: 34.469444<br />
+	lon: -120.680833
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.680833,34.469444,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Hazel</name>
+	<description><![CDATA[
+	lat: 34.382222<br />
+	lon: -119.566944
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.566944,34.382222,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Heidi</name>
+	<description><![CDATA[
+	lat: 34.342500<br />
+	lon: -119.518611
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.518611,34.342500,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Helen</name>
+	<description><![CDATA[
+	lat: 34.443889<br />
+	lon: -120.296944
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.296944,34.443889,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Henry</name>
+	<description><![CDATA[
+	lat: 34.333333<br />
+	lon: -119.552222
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.552222,34.333333,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Heritage</name>
+	<description><![CDATA[
+	lat: 34.350000<br />
+	lon: -120.267778
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.267778,34.350000,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Herman</name>
+	<description><![CDATA[
+	lat: 34.431389<br />
+	lon: -120.381389
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.381389,34.431389,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Hermosa</name>
+	<description><![CDATA[
+	lat: 34.455278<br />
+	lon: -120.646389
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.646389,34.455278,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Hidalgo</name>
+	<description><![CDATA[
+	lat: 34.495000<br />
+	lon: -120.702222
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.702222,34.495000,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Hilda</name>
+	<description><![CDATA[
+	lat: 34.388333<br />
+	lon: -119.595000
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.595000,34.388333,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Hillhouse</name>
+	<description><![CDATA[
+	lat: 34.331389<br />
+	lon: -119.603333
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.603333,34.331389,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Hogan</name>
+	<description><![CDATA[
+	lat: 34.337500<br />
+	lon: -119.543889
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.543889,34.337500,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Holly</name>
+	<description><![CDATA[
+	lat: 34.390000<br />
+	lon: -119.905278
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.905278,34.390000,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Hondo</name>
+	<description><![CDATA[
+	lat: 34.390278<br />
+	lon: -120.119722
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.119722,34.390278,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Hope</name>
+	<description><![CDATA[
+	lat: 34.340833<br />
+	lon: -119.530833
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.530833,34.340833,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Houchin</name>
+	<description><![CDATA[
+	lat: 34.335000<br />
+	lon: -119.552222
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.552222,34.335000,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Irene</name>
+	<description><![CDATA[
+	lat: 34.610278<br />
+	lon: -120.729167
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.729167,34.610278,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Rincon</name>
+	<description><![CDATA[
+	lat: 34.347222<br />
+	lon: -119.444722
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-119.444722,34.347222,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>Salm</name>
+	<description><![CDATA[
+	lat: 34.405000<br />
+	lon: -120.099722
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-120.099722,34.405000,0</coordinates>
+	</Point>
+</Placemark>
+<Placemark>
+	<name>White</name>
+	<description><![CDATA[
+	lat: 33.752778<br />
+	lon: -118.158611
+	]]>
+	</description>
+	<styleUrl>#platform</styleUrl>
+	<Point>
+    <altitudeMode>clampToGround</altitudeMode>
+		<coordinates>-118.158611,33.752778,0</coordinates>
+	</Point>
+</Placemark>
+</Document>
+</kml>

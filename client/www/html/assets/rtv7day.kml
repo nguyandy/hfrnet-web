@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+ <name>Recent RTV Data</name>
+ <description><![CDATA[HF RADAR derived surface currents are provided by CORDC http://cordc.ucsd.edu/projects/mapping/]]></description>
+ <open>1</open>
+<NetworkLink>
+  <name>25hr Averaged, 6km</name>
+  <open>1</open>
+  <visibility>1</visibility>
+  <Link>
+    <href>http://hfrnet.ucsd.edu/rtv/networkKml.php?res=6km&amp;pfx=a&amp;rng=0,50&amp;cs=HEAT</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>3600</refreshInterval>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>25hr Averaged, 2km</name>
+  <open>0</open>
+  <visibility>0</visibility>
+  <Link>
+    <href>http://hfrnet.ucsd.edu/rtv/networkKml.php?res=2km&amp;pfx=a&amp;rng=0,50&amp;cs=HEAT</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>3600</refreshInterval>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>25hr Averaged, 1km</name>
+  <open>0</open>
+  <visibility>0</visibility>
+  <Link>
+    <href>http://hfrnet.ucsd.edu/rtv/networkKml.php?res=1km&amp;pfx=a&amp;rng=0,50&amp;cs=HEAT</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>3600</refreshInterval>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>25hr Averaged, 500m</name>
+  <open>0</open>
+  <visibility>0</visibility>
+  <Link>
+    <href>http://hfrnet.ucsd.edu/rtv/networkKml.php?res=500m&amp;pfx=a&amp;rng=0,50&amp;cs=HEAT</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>3600</refreshInterval>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>Hourly, 6km</name>
+  <open>0</open>
+  <visibility>0</visibility>
+  <Link>
+    <href>http://hfrnet.ucsd.edu/rtv/networkKml.php?res=6km&amp;pfx=h&amp;rng=0,50&amp;cs=HEAT</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>3600</refreshInterval>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>Hourly, 2km</name>
+  <open>0</open>
+  <visibility>0</visibility>
+  <Link>
+    <href>http://hfrnet.ucsd.edu/rtv/networkKml.php?res=2km&amp;pfx=h&amp;rng=0,50&amp;cs=HEAT</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>3600</refreshInterval>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>Hourly, 1km</name>
+  <open>0</open>
+  <visibility>0</visibility>
+  <Link>
+    <href>http://hfrnet.ucsd.edu/rtv/networkKml.php?res=1km&amp;pfx=h&amp;rng=0,50&amp;cs=HEAT</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>3600</refreshInterval>
+  </Link>
+</NetworkLink>
+<NetworkLink>
+  <name>Hourly, 500m</name>
+  <open>0</open>
+  <visibility>0</visibility>
+  <Link>
+    <href>http://hfrnet.ucsd.edu/rtv/networkKml.php?res=500m&amp;pfx=h&amp;rng=0,50&amp;cs=HEAT</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>3600</refreshInterval>
+  </Link>
+</NetworkLink>
+</Document>
+</kml>

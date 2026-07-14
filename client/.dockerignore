@@ -1,0 +1,25 @@
+# Node dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+
+# OS and editor files
+.DS_Store
+*.swp
+
+# SQL and data dumps
+*.sql
+
+# Test and example directories
+**/test/
+**/tests/
+**/examples/
+
+# Logs
+*.log
+
+# Docker and Compose override files
+docker-compose*.yml

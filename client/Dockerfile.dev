@@ -1,0 +1,11 @@
+FROM node:22
+
+WORKDIR /app
+
+COPY package.json ./
+COPY webpack.config.js ./
+
+RUN npm install
+COPY www ./www
+
+CMD ["npm", "run", "dev"]

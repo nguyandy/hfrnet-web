@@ -1,0 +1,10 @@
+python-dotenv==1.1.1
+basemap==2.0.0
+matplotlib==3.10.7
+configparser==7.2.0
+pymysql==1.1.2
+pyproj==3.7.2
+s3fs==2025.10.0
+h5netcdf==1.7.3
+cryptography==46.0.3
+boto3==1.40.45

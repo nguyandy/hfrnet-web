@@ -1,0 +1,50 @@
+html {
+  font-size: 14px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100%;
+}
+
+iframe{
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header {
+  grid-column: span 12;
+  height: 44px;
+  background-color: red;
+  vertical-align: middle;
+}
+
+#datepicker {
+  width: 200px;
+}
+
+.gm-style-iw-d {
+  margin-top: -20px;
+}
+
+.app-container {
+  height: calc(100% - 54px);
+}
+
+div#sidebarMenu {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: inherit;
+}
+
+@media (max-width: 768px) {
+  div#sidebarMenu {
+    height: auto;
+  }
+  
+}
