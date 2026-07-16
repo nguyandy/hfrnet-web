@@ -33,39 +33,34 @@ flowchart LR
 
 ## Quick Start
 
-Each component is run with its own Docker Compose setup and configured through an
-`.env` file. Copy the provided `.env.example` files and fill in your own values
-before starting anything.
+The repo root contains a single Docker Compose file that starts the client, API,
+and database together. You just need two `.env` files first:
 
-1. **Database** (start first, since the API and client depend on it):
-
-   ```bash
-   cd database
-   docker-compose up -d
-   ```
-
-2. **API:**
+1. **Configure environment files:**
 
    ```bash
-   cd api
-   cp .env.example .env   # then edit .env
-   docker-compose up --build
+   cp .env.example .env          # set GOOGLE_MAPS_API_KEY
+   cp api/.env.example api/.env  # set HFRNET_DIR and AWS credentials
    ```
 
-   Serves at `http://localhost:5000`.
-
-3. **Client:**
+2. **Start everything:**
 
    ```bash
-   cp .env.example .env    # at the repo root; set GOOGLE_MAPS_API_KEY and API_URL
-   cd client
-   docker-compose up --build
+   docker compose up --build
    ```
 
-   Serves at `http://localhost:3000`.
+   | Service  | URL                    |
+   |----------|------------------------|
+   | Client   | http://localhost:3000  |
+   | API      | http://localhost:5000  |
+   | Database | localhost:3306 (MySQL) |
 
-See each component's README for full instructions:
-[API README](./api/README.md), [Client README](./client/README.md),
+   The database starts first; the API and client wait until it is healthy.
+
+Each component can also be run on its own with the Docker Compose file in its
+directory (this requires creating the shared network first with
+`docker network create hfrnet`). See the component READMEs for full
+instructions: [API README](./api/README.md), [Client README](./client/README.md),
 [Database README](./database/README.md).
 
 
