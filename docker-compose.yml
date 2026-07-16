@@ -1,10 +1,81 @@
 services:
-  hfrnet-client:
-    image: php:5.6.40-apache
-    container_name: hfrnet-client
+  hfrnet-mysql:
+    image: mysql:8.0
+    container_name: hfrnet-mysql
+    restart: unless-stopped
     ports:
-      - "3000:80"
-    volumes:
-      - ./:/var/www/html
+      - "3306:3306"
     env_file:
       - .env
+    volumes:
+      - hfrnet_mysql_data:/var/lib/mysql
+      - ./database/initdb:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u$$MYSQL_USER -p$$MYSQL_PASSWORD"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    networks:
+      - hfrnet
+
+  hfrnet-api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: hfrnet-api
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./api
+          target: /app
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./api/.env
+    volumes:
+      - ./api/radialdata.ini:/app/radialdata.ini
+    depends_on:
+      hfrnet-mysql:
+        condition: service_healthy
+    networks:
+      - hfrnet
+
+  hfrnet-php-server:
+    build: ./client
+    container_name: hfrnet-php-server
+    volumes:
+      - ./client/www:/var/www:ro
+    env_file:
+      - .env
+    depends_on:
+      hfrnet-mysql:
+        condition: service_healthy
+    networks:
+      - hfrnet
+
+  hfrnet-dev:
+    platform: linux/amd64
+    build:
+      context: ./client
+      dockerfile: Dockerfile.dev
+    container_name: hfrnet-dev
+    env_file:
+      - .env
+    volumes:
+      - ./client/www:/app/www
+      - ./.env:/app/.env:ro
+    ports:
+      - "3000:3000"
+    depends_on:
+      - hfrnet-php-server
+    networks:
+      - hfrnet
+
+networks:
+  hfrnet:
+    name: hfrnet
+
+volumes:
+  hfrnet_mysql_data:
+    driver: local
