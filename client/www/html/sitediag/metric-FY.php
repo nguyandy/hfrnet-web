@@ -256,7 +256,7 @@ Note:  there are a small number of sites (about 6) with topographic barriers to 
 </p>
 
 <p>
-For more details see: <a href='http://cordc.ucsd.edu/projects/hfrnet/documents/IOOS_metrics_HFR_201801.pdf'>High Frequency (HF) Radar National Network (HFRNet) Performance Metric</a>
+For more details see: <a href='https://hfradar.ioos.us/hfrnet/documents/IOOS_metrics_HFR_201801.pdf'>High Frequency (HF) Radar National Network (HFRNet) Performance Metric</a>
 </p>
 
 ";
