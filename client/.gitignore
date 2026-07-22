@@ -1,3 +1,5 @@
 .env
 node_modules
-*.min.js
+www/html/diagnostics/js/index.min.js
+www/html/js/index.min.js
+www/html/js/plot.min.js
