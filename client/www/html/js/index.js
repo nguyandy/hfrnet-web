@@ -25,6 +25,7 @@ let latlonlocator; // Marker used for coordinate locator
 // Constants
 const STATION_KML = "https://hfradar.ioos.us/hfrnet/rtv/ss.php";
 const OIL_KML = "https://hfradar.ioos.us/hfrnet/assets/oil-platforms.kml";
+const MIN_TIME = Date.UTC(2025, 6, 1); // earliest date that can be selected (no RTV data before this date)
 const API_URL = process.env.API_URL;
 const SUBDIRECTORY = process.env.SUBDIRECTORY;
 
@@ -123,6 +124,9 @@ if ($.urlParam("prod").includes("h")) {
 // Ensure currentSettings time does not exceed maxTime
 if (currentSettings["time"] > maxTime) {
   currentSettings["time"] = maxTime;
+}
+if (currentSettings["time"] * 1000 < MIN_TIME) {
+  currentSettings["time"] = MIN_TIME / 1000;
 }
 
 /**
@@ -667,6 +671,7 @@ function setMaxTime() {
   }
   const tz = getSelectedTimezone();
   $("#datepicker").datetimepicker({
+    minDate: getDateFromEpoch(MIN_TIME, tz),
     maxDate: getDateFromEpoch(maxTime, tz),
     maxTime: getTimeFromEpoch(maxTime, tz, 0),
   });
@@ -1219,7 +1224,7 @@ $(document).ready(() => {
     defaultDate: mydate,
     defaultTime: mytime,
     formatDate: "m/d/Y",
-    minDate: "06/01/2006",
+    minDate: getDateFromEpoch(MIN_TIME, initTz),
     maxDate: "0",
     scrollTime: false,
     onSelectDate: function (ct, input) {
@@ -1455,6 +1460,10 @@ function updateTime(epochseconds) {
     $("#onemoreday, #onemorehour").css("pointer-event", "none");
   } else {
     $("#onemoreday, #onemorehour").css("pointer-event", "auto");
+  }
+
+  if (epochtime < MIN_TIME) {
+    epochtime = MIN_TIME;
   }
 
   const newdate = getDateFromEpoch(epochtime, tz);

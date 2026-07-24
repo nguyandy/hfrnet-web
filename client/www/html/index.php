@@ -227,6 +227,9 @@ if ($subdirectory === false || $subdirectory === '') {
               <td><input class="form-check-input" type="checkbox" id="ya_2km" value="ya_2km"></td>
               <td><input class="form-check-input" type="checkbox" id="ya_6km" value="ya_6km"></td>
             </tr>
+            <tr>
+              <td colspan="5" class="text-muted" style="font-size: 0.7rem;">Note: Historical RTV products measured prior to July 2025 are available <a href="https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:IOOS-HFRadarRTVector" target="_blank" rel="noopener">from NCEI</a>.</td>
+            </tr>
           </tbody>
         </table>
             </div>
